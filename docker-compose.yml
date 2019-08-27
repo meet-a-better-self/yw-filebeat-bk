@@ -1,0 +1,17 @@
+version: '2'
+services:
+    filebeat:
+        container_name: yw-filebeat
+        image: inner.harbor.zhenaioa.com/library/docker.elastic.co/beats/filebeat:6.3.1
+        restart: always
+        hostname: ${HOSTNAME}
+        volumes:
+            - /etc/localtime:/etc/localtime:ro
+            - ./cfg/filebeat.yml:/usr/share/filebeat/filebeat.yml
+            - ./data/:/usr/share/filebeat/data/
+            - ./cfg/conf.d:/usr/share/filebeat/conf.d
+            - /data/log/coreuser/:/data/log/coreuser/:ro
+            - /data/log/nginx/:/data/log/nginx/:ro
+            - /data/logs/:/data/logs/:ro
+            - /data/docker/:/data/docker/:ro
+            - /data/opt/:/data/opt/:ro

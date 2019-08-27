@@ -1,0 +1,9 @@
+- paths:
+    - /data/logs/zhenai-crm-operlog-web/operLog/operLog.log
+  fields:
+    project: crm
+    app: operlog
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true

@@ -1,0 +1,115 @@
+- paths:
+    - /data/log/nginx/jiebao.zhenai.com.access.json.log
+  fields:
+    app: nginx
+    project: crm-frontend
+- paths:
+    - /data/log/nginx/pad.crm.zhenai.com.access.json.log
+  fields:
+    app: "pad-nginx"
+    project: crm-frontend
+- paths:
+    - /data/log/nginx/app.jiebao.zhenai.com.access.json.log
+  fields:
+    app: "app-nginx"
+    project: crm-frontend
+- paths:
+    - /data/log/nginx/mingqi.zhenai.com.access.json.log
+  fields:
+    app: "mq-nginx"
+    project: crm-frontend
+
+# new nginx -- unbj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-unbj/logs/jiebao.zhenai.com.access.json.log
+  fields:
+    app: nginx
+    project: crm-frontend
+    nginx_type: unbj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-unbj/logs/pad.crm.zhenai.com.access.json.log
+  fields:
+    app: "pad-nginx"
+    project: crm-frontend
+    nginx_type: unbj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-unbj/logs/app.jiebao.zhenai.com.access.json.log
+  fields:
+    app: "app-nginx"
+    project: crm-frontend
+    nginx_type: unbj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-unbj/logs/mingqi.zhenai.com.access.json.log
+  fields:
+    app: "mq-nginx"
+    project: crm-frontend
+    nginx_type: unbj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-unbj/logs/inner.jiebao.zhenaioa.com.access.json.log
+  fields:
+    app: "inner-nginx"
+    project: crm-frontend
+    nginx_type: unbj
+# waf nginx
+- paths:
+    - /data/docker/zhenai-crm-nginx-waf/logs/jiebao.zhenai.com.access.json.log
+  fields:
+    app: nginx
+    project: crm-frontend
+    nginx_type: waf-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-waf/logs/pad.crm.zhenai.com.access.json.log
+  fields:
+    app: "pad-nginx"
+    project: crm-frontend
+    nginx_type: waf-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-waf/logs/app.jiebao.zhenai.com.access.json.log
+  fields:
+    app: "app-nginx"
+    project: crm-frontend
+    nginx_type: waf-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-waf/logs/mingqi.zhenai.com.access.json.log
+  fields:
+    app: "mq-nginx"
+    project: crm-frontend
+    nginx_type: waf-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-waf/logs/inner.jiebao.zhenaioa.com.access.json.log
+  fields:
+    app: "inner-nginx"
+    project: crm-frontend
+    nginx_type: waf-bj
+
+# old-bj nginx
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-bj/logs/jiebao.zhenai.com.access.json.log
+  fields:
+    app: nginx
+    project: crm-frontend
+    nginx_type: old-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-bj/logs/pad.crm.zhenai.com.access.json.log
+  fields:
+    app: "pad-nginx"
+    project: crm-frontend
+    nginx_type: old-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-bj/logs/app.jiebao.zhenai.com.access.json.log
+  fields:
+    app: "app-nginx"
+    project: crm-frontend
+    nginx_type: old-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-bj/logs/mingqi.zhenai.com.access.json.log
+  fields:
+    app: "mq-nginx"
+    project: crm-frontend
+    nginx_type: old-bj
+- paths:
+    - /data/docker/zhenai-crm-nginx-prod-bj/logs/inner.jiebao.zhenaioa.com.access.json.log
+  fields:
+    app: "inner-nginx"
+    project: crm-frontend
+    nginx_type: old-bj

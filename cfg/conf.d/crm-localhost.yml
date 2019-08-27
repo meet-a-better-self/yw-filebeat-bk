@@ -1,0 +1,135 @@
+- paths:
+    - /data/opt/apache-tomcat8-app/logs/localhost.20*.log
+  fields:
+    app: localhost-app
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-center/logs/localhost.20*.log
+  fields:
+    app: localhost-center
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-common/logs/localhost.20*.log
+  fields:
+    app: localhost-common
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-core-user/logs/localhost.20*.log
+  fields:
+    app: localhost-core-user
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-finance-core/logs/localhost.20*.log
+  fields:
+    app: localhost-finance-core
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-invite/logs/localhost.20*.log
+  fields:
+    app: localhost-invite
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-login/logs/localhost.20*.log
+  fields:
+    app: localhost-login
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-match/logs/localhost.20*.log
+  fields:
+    app: localhost-match
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-matchmaker/logs/localhost.20*.log
+  fields:
+    app: localhost-matchmaker
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-operlog/logs/localhost.20*.log
+  fields:
+    app: localhost-operlog
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-pad-server/logs/localhost.20*.log
+  fields:
+    app: localhost-pad-server
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-permission/logs/localhost.20*.log
+  fields:
+    app: localhost-permission
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-resload1/logs/localhost.20*.log
+  fields:
+    app: localhost-resload1
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-sale/logs/localhost.20*.log
+  fields:
+    app: localhost-sale
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-schedule-executor/logs/localhost.20*.log
+  fields:
+    app: localhost-executor
+    project: crm-server
+  multiline.pattern: "^[0-3][0-9]-[a-zA-Z]{3}-[0-9]{4}"
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true

@@ -1,0 +1,153 @@
+- paths:
+    - /data/opt/apache-tomcat8-app/logs/catalina.out
+  fields:
+    app: app
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-center/logs/catalina.out
+  fields:
+    app: center
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-common/logs/catalina.out
+  fields:
+    app: common
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-core-user/logs/catalina.out
+  fields:
+    app: core-user
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-finance-core/logs/catalina.out
+  fields:
+    app: finance-core
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-invite/logs/catalina.out
+  fields:
+    app: invite
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-login/logs/catalina.out
+  fields:
+    app: login
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-match/logs/catalina.out
+  fields:
+    app: match
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-matchmaker/logs/catalina.out
+  fields:
+    app: matchmaker
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-operlog/logs/catalina.out
+  fields:
+    app: operlog
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-pad-server/logs/catalina.out
+  fields:
+    app: pad-server
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-permission/logs/catalina.out
+  fields:
+    app: permission
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-resload1/logs/catalina.out
+  fields:
+    app: resload1
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-sale/logs/catalina.out
+  fields:
+    app: sale
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/opt/apache-tomcat8-schedule-executor/logs/catalina.out
+  fields:
+    app: executor
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/docker/zhenai-cupid-enterprise-web/logs/*.log
+  fields:
+    app: cupid-enterprise-web
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true
+- paths:
+    - /data/docker/zhenai-cupid-enterprise-cms-web/logs/*.log
+  fields:
+    app: cupid-enterprise-cms-web 
+    project: crm-server
+  multiline.pattern: '^20|\[20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true

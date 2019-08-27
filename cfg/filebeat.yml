@@ -1,0 +1,13 @@
+filebeat.config.prospectors:
+  enabled: true
+  path: /usr/share/filebeat/conf.d/*.yml
+  scan_frequency: 10s
+output.kafka:
+  hosts: ["kafka.elk.yw.zhenaioa.com:9092"]
+  topic: "elk"
+  worker: 3
+  partition.round_robin:
+    reachable_only: false
+  required_acks: 1
+  max_message_bytes: 1000000
+  compression: none

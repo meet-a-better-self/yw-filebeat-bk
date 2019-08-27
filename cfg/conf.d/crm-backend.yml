@@ -1,0 +1,156 @@
+- paths:
+    - /data/logs/zhenai-crm-matchmaker-provider/stdout.log
+  fields:
+    app: matchmaker
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-organ-data-sync/stdout.log
+  fields:
+    app: organ
+    project: crm-data-sync
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-center-provider/stdout.log
+  fields:
+    app: center 
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-export-provider/stdout.log
+  fields:
+    app: export 
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-finance-data-sync/stdout.log
+  fields:
+    app: finance 
+    project: crm-data-sync
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-invite-provider/stdout.log
+  fields:
+    app: invite 
+    project: crm-provider
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-login-provider/stdout.log
+  fields:
+    app: login 
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-member-provider/stdout.log
+  fields:
+    app: member 
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-permission-provider/stdout.log
+  fields:
+    app: permission 
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-reach-provider/stdout.log
+  fields:
+    app: reach 
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-resource-provider/stdout.log
+  fields:
+    app: resource 
+    project: crm-provider
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+
+- paths:
+    - /data/logs/zhenai-crm-sale-provider/stdout.log
+  fields:
+    app: sale 
+    project: crm-provider
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+
+- paths:
+    - /data/logs/zhenai-crm-search/stdout.log
+  fields:
+    app: match 
+    project: crm-data-sync
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-xiaoji-data-sync/stdout.log
+  fields:
+    app: xiaoji 
+    project: crm-data-sync
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-finance-core-provider/stdout.log
+  fields:
+    app: finance
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-app-provider/stdout.log
+  fields:
+    app: app
+    project: crm-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-cupid-provider/*.log
+    - /data/logs/zhenai-cupid-provider/zhenai-cupid-provider/*.log
+  fields:
+    app: cupid
+    project: cupid-provider
+  multiline.pattern: '^\['
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/docker/zhenai-cupid-enterprise-provider/logs/*.log
+  fields:
+    app: cupid-enterprise-provider 
+    project: crm-provider
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+- paths:
+    - /data/logs/zhenai-crm-pad/padlog.log
+  fields:
+    project: crm
+    app: pad
+  multiline.pattern: '^20'
+  multiline.negate: true
+  multiline.match: after
+  tail_files: true

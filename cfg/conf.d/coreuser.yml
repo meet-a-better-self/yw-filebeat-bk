@@ -1,0 +1,11 @@
+- paths:
+    - /data/log/coreuser/monitor/monitor.log
+  fields:
+    app: monitor
+    project: coreuser
+
+- paths:
+    - /data/log/coreuser/sql/update_sql.log
+  fields:
+    app: updatesql
+    project: coreuser
